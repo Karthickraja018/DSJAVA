@@ -4,27 +4,30 @@ public class Main {
     public static void main(String[] args) {
         HashMap<String,String> map = new HashMap<>();
         //Insertion
-        map.put("TN","Tamil Nadu");
-        map.put("KA","Karnataka");
-        map.put("KL","Kerala");
+        map.put("IND","India");
+        map.put("AUS","Australia");
+        map.put("ENG","England");
+        map.put("NZ","Newzealand");
+        map.put("PAK","Pakistan");
         
         
         //search
         System.out.println("------------Search------------");
-        System.out.println(map.get("TN"));
-        System.out.println(map.get("KL"));
-        System.out.println(map.get("KA"));
-        
-        
-        //search with default
-        System.out.println("------Search With Default--------");
-        System.out.println(map.getOrDefault("AK","Not Found"));
+        System.out.println(map.get("IND"));
+        System.out.println(map.get("AUS"));
+        System.out.println(map.get("ENG"));
+        System.out.println(map.get("NZ"));
+        System.out.println(map.get("PAK"));
         
         //remove 
         System.out.println("-------------Remove------------");
-        map.remove("KA");
+        map.remove("PAK");
+        System.out.println(map.get("PAK"));
         
-        System.out.println(map.get("KA"));
+        //search with default
+        System.out.println("------Search With Default--------");
+        System.out.println(map.getOrDefault("IND","Not Found"));
+        System.out.println(map.getOrDefault("PAK","Eliminated"));
         
         //Key Value Pair
         System.out.println("--------Key Value Pair---------");
@@ -39,8 +42,8 @@ public class Main {
         
         //Contains
         System.out.println("------------Contains------------");
-        System.out.println(map.containsKey("AP"));
-        System.out.println(map.containsValue("Tamil Nadu"));
+        System.out.println(map.containsKey("ENG"));
+        System.out.println(map.containsValue("Afganistan"));
         
         //to know Size of the map
         System.out.println("-------size of the map✌️---------");
