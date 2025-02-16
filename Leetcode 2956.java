@@ -1,7 +1,9 @@
+//Import necessary Library for this program i added HashSet
 import java.util.HashSet;
 
 class Solution {
     public int[] findIntersectionValues(int[] nums1, int[] nums2) {
+        //Define HashSet Objects
         HashSet<Integer> set1 = new HashSet<>();
         HashSet<Integer> set2 = new HashSet<>();
 
